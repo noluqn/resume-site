@@ -1,9 +1,10 @@
 # resume-site
 Personal resume highlighting my cybersecurity experience, including system hardening (Windows/Linux), Cisco networking, and CyberPatriot competitions. Created to support internship and entry-level job applications as I pursue a career in cybersecurity.
 
+
 # 💼 Cybersecurity Resume Project
 
-Welcome! This repository contains my personal cybersecurity resume, designed to showcase my skills, experience, and dedication to the field. As a high school senior and CyberPatriot competitor, I’ve gained hands-on experience with real-world security scenarios, system hardening, and network defense.
+Personal resume showcasing my cybersecurity experience in system hardening (Windows/Linux), Cisco networking, and CyberPatriot competitions. Built for internship and entry-level roles. Contact: lullqen09@gmail.com
 
 ---
 
@@ -34,18 +35,16 @@ In 2024, I was invited to **speak at the Executive Office Building in Washington
 
 - `Darrel_Singh_Cybersecurity_Resume.pdf` – My current resume  
 - `README.md` – This file  
-- `Resume_Source.docx` *(optional)* – If you want to include an editable Word version
+- `Resume_Source.docx` *(optional)* – Editable version of my resume
 
 ---
 
 ## 📫 Contact
 
-Want to connect or collaborate?  
-**Email:** [your.email@example.com]  
-**LinkedIn:** [linkedin.com/in/your-profile] *(if you have one)*  
-**Website / Portfolio:** [optional]
+**Email:** lullqen09@gmail.com  
+**LinkedIn:** [Coming Soon]  
+**Portfolio/Website:** [Coming Soon]
 
 ---
 
 > “Cybersecurity isn’t just a career path—it’s a mindset. And I’m here for it.” 🔐
-
