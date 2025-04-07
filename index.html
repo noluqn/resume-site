@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darrel Ian Sanchez Singh | Cybersecurity Analyst</title>
+    <style>
+        :root {
+            --primary: #e63946;
+            --primary-dark: #c1121f;
+            --secondary: #1d3557;
+            --light: #f1faee;
+            --accent: #a8dadc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255, 255, 255, 0.05) 20px,
+                rgba(255, 255, 255, 0.05) 40px
+            );
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .profile {
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+        
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            width: fit-content;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: var(--light);
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        .menu li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Main content */
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: var(--primary);
+            margin-top: 0.5rem;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+        
+        .about-text {
+            flex: 2;
+        }
+        
+        .skills {
+            flex: 1;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .skill-list li::before {
+            content: "›";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .experience-title, .education-title {
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-period, .education-period {
+            color: #777;
+            margin-bottom: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .pulsate {
+            animation: pulsate 2s infinite;
+        }
+        
+        @keyframes pulsate {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                margin: 1rem auto;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .skills {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="profile">
+                <h1>Darrel Ian Sanchez Singh</h1>
+                <p class="title">Cybersecurity Analyst</p>
+                <div class="contact-info">
+                    <p><a href="mailto:lullqen09@gmail.com">lullqen09@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container nav-container">
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I have been involved in cybersecurity for 3 years now. Developing skills by learning how to harden Linux distributions, Windows, and Windows servers along with networking through our school's cybersecurity program, CyberPatriots club and people that I learn with/resonate with their passion for cybersecurity.</p>
+                        <br>
+                        <p>I had been captain of one of our CyberPatriots team for the CyberPatriot's National Youth Cyber Defense Competition 2 years now and we have achieved amazing placements: 1st state gold in my first year of the club then we had achieved platinum making it to the semi-finals the following year.</p>
+                        <br>
+                        <p>Cyber has brought me a long way and many opportunities... I spent a week in CSUSB to receive an education camp on cybersecurity where I learned pentesting hands-on and connected with many experts in the different fields of cybersecurity.</p>
+                        <br>
+                        <p>I had the opportunity to go to Washington DC in the Eisenhower Executive Office Building to share my experience and how cybersecurity has impacted & shaped my life. Spring break of 2025 I attended a WorkEd externship certifying knowledge in AI and advanced cybersecurity.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Technical Skills</h3>
+                        <ul class="skill-list">
+                            <li>System Hardening & Security</li>
+                            <li>Networking & Cisco Fundamentals</li>
+                            <li>Problem Solving & Teamwork</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML, CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-item">
+                    <h3 class="experience-title">CyberPatriot National Youth Cyber Defense Competition</h3>
+                    <p class="experience-period">September 2022 - Present</p>
+                    <p>Two-time team captain leading our team to achieve 1st place state gold and platinum status, advancing to semi-finals. Focused on system hardening, vulnerability remediation, and real-time security defense strategies.</p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">Hack The Box (HTB) Competitor</h3>
+                    <p class="experience-period">September 2022 - Present</p>
+                    <p>Actively participating in cybersecurity challenges that test penetration testing skills, vulnerability identification, and exploit development in various environments.</p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="experience-title">CyberSkyline Competitor</h3>
+                    <p class="experience-period">September 2022 - Present</p>
+                    <p>Engaged in various cybersecurity competitions focused on practical defense strategies, network security, and systems administration challenges.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3 class="education-title">High School Diploma</h3>
+                    <p class="education-period">Expected May 2025</p>
+                    <p><strong>GPA:</strong> 4.461</p>
+                    <p><strong>Relevant Coursework:</strong> AP Computer Science Principles, CIS1A, CIS21</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="education-title">Professional Development</h3>
+                    <ul class="skill-list">
+                        <li>CSUSB Cybersecurity Education Camp - Hands-on penetration testing and networking with industry experts</li>
+                        <li>WorkEd Externship (Spring 2025) - Certification in AI and advanced cybersecurity</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Darrel Ian Sanchez Singh | Cybersecurity Analyst</p>
+            <p class="pulsate"><a href="mailto:lullqen09@gmail.com" style="color: white; text-decoration: none;">lullqen09@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
